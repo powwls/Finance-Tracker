@@ -1,0 +1,28 @@
+{
+  "ui": {
+      
+    "bg_color": "#F2F1EF",          
+    "text_color": "#F2F1EF",
+
+
+    "primary_txt_color": "#E9E4DB",
+    
+
+    "primary_btn": "#71BBB2",
+    "primary_btn_txt": "#ffffff",
+
+    "button_color": "#4CAF50",       
+
+    "primary_btn_hover_color": "#03393F", 
+
+    "font_family": "Poppins",         
+    "font_size": 24,                
+
+    "sec_font_family": "Metrophobic",    
+    "sec_font_size": 16,
+
+    "window_width": 800,            
+    "window_height": 600,            
+    "padding": 10                   
+  }
+}
