@@ -43,18 +43,18 @@ class GoalTracker_Frame(Main_Container):
                   main_container = Main_Container(self)
                   main_container.pack(side="top", fill="both", expand=True)
 
-                  container = ctk.CTkFrame(main_container, corner_radius=20, fg_color="#E0EDC5")
+                  container = ctk.CTkFrame(main_container, corner_radius=20, fg_color="#F2F2F2")
                   container.pack(side="left", fill="both", expand=True, padx=20, pady=20)
 
                   add_goal_btn = ctk.CTkButton(container, text="+ Add Goal", font=("Poppins", 16, "bold"),
-                                                fg_color="#2F2F2F", hover_color="#03393F", text_color="#FFFFFF",
+                                                fg_color="#324360", hover_color="#5697A6", text_color="#FFFFFF",
                                                 command=lambda: add_goal_modal(self.master))
                   add_goal_btn.pack(side="top", anchor="e", padx=(20, 50), pady=(20, 0))
 
-                  card_metrics_frame = ctk.CTkFrame(container, width=350, corner_radius=5, fg_color="#FFFFFF")
+                  card_metrics_frame = ctk.CTkFrame(container, width=350, corner_radius=5, fg_color="#F2F2F2")
                   card_metrics_frame.pack(side="left", fill="y", padx=(20, 10), pady=10)
 
-                  right_content_frame = ctk.CTkScrollableFrame(container, corner_radius=10, fg_color="#F6F6F6")
+                  right_content_frame = ctk.CTkScrollableFrame(container, corner_radius=10, fg_color="#FFFFFF")
                   right_content_frame.pack(side="left", fill="both", expand=True, padx=(10, 20), pady=20)
 
                   for widget in right_content_frame.winfo_children():
@@ -97,14 +97,14 @@ class GoalTracker_Frame(Main_Container):
                         view_icon = ctk.CTkImage(light_image=Image.open("src/assets/icons/actions_icon/view.png"), size=(20, 20))
                         delete_icon = ctk.CTkImage(light_image=Image.open("src/assets/icons/actions_icon/delete.png"), size=(20, 20))
                         
-                        edit_btn = ctk.CTkButton(progress_container, text="", image= edit_icon, width=50, fg_color="#507DBC",
+                        edit_btn = ctk.CTkButton(progress_container, text="", image= edit_icon, width=50, fg_color="#5697A6",
                          command=lambda gid=goal_id: edit_goal_modal(self.master, gid))
                         edit_btn.pack(side="left", padx=(0, 10))
 
 
                 
                         view_btn = ctk.CTkButton(actions_frame, text="", image=view_icon, width=50, height=28, font=("Poppins", 12),
-                                                fg_color="#507DBC", text_color="white", hover_color="#03393F",
+                                                fg_color="#5697A6", text_color="white", hover_color="#324360",
                                                 command=lambda gid=goal_id: view_goal_modal(self.master, gid))
                         view_btn.pack(side="left", padx=(0, 5))
 

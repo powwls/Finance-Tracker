@@ -60,33 +60,33 @@ def create_metric_cards_ver(frame, title, value, subhead, row):
         cards_width = 400
         cards_height = 200
 
-        card = ctk.CTkFrame(frame, width=cards_width, height=cards_height, corner_radius=10, fg_color="#B8D9BA")
+        card = ctk.CTkFrame(frame, width=cards_width, height=cards_height, corner_radius=10, fg_color="#324360")
         card.grid(row=row, column=0, padx=10, pady=10)
         card.pack_propagate(False)
 
         # Title section
-        card_title_frame = ctk.CTkFrame(card, width=cards_width, height=40, corner_radius=10, fg_color="#B8D9BA")
+        card_title_frame = ctk.CTkFrame(card, width=cards_width, height=40, corner_radius=10, fg_color="#324360")
         card_title_frame.pack(fill="both", expand=False, padx=10, pady=(30, 0))
         card_title_frame.pack_propagate(False)
 
-        card_title = ctk.CTkLabel(card_title_frame, width=cards_width, text=title, text_color="#2F2F2F", font=("Poppins", 23, "bold"))
+        card_title = ctk.CTkLabel(card_title_frame, width=cards_width, text=title, text_color="#F6F7FA", font=("Poppins", 23, "bold"))
         card_title.pack(anchor="w", padx=10)
 
         # Value section
-        card_value_frame = ctk.CTkFrame(card, width=cards_width, height=50, corner_radius=10, fg_color="#B8D9BA")
+        card_value_frame = ctk.CTkFrame(card, width=cards_width, height=50, corner_radius=10, fg_color="#324360")
         card_value_frame.pack(fill="both", expand=False, padx=10, pady=(5, 0))
         card_value_frame.pack_propagate(False)
 
-        card_value = ctk.CTkLabel(card_value_frame, text=value, text_color="#2F2F2F",
+        card_value = ctk.CTkLabel(card_value_frame, text=value, text_color="#F6F7FA",
                                   font=("Poppins", 34, "bold"))
         card_value.pack(anchor="center")
 
         # Subheading section
-        card_subheading_fr = ctk.CTkFrame(card, width=cards_width, height=40, corner_radius=10, fg_color="#B8D9BA")
+        card_subheading_fr = ctk.CTkFrame(card, width=cards_width, height=40, corner_radius=10, fg_color="#324360")
         card_subheading_fr.pack(fill="both", expand=False, padx=10, pady=(5, 10))
         card_subheading_fr.pack_propagate(False)
 
-        card_subheading_txt = ctk.CTkLabel(card_subheading_fr, text=subhead, text_color="#2F2F2F",
+        card_subheading_txt = ctk.CTkLabel(card_subheading_fr, text=subhead, text_color="#F6F7FA",
                                            font=("Poppins", 16, "bold"))
         card_subheading_txt.pack(anchor="center")
 
